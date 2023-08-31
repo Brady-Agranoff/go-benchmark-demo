@@ -1,0 +1,7 @@
+{
+	"Go benchmark": {
+		"prefix": "gobench",
+		"body": ["${1:benchmarkTime} := time.Now()", "", "$3", "", "elapsed := time.Since(${1:benchmarkTime})", "fmt.Printf(\"${2:Benchmark} execution time: %s\\n\", elapsed)"],
+		"description": "Benchmark the time of a Go execution"
+	}
+}
